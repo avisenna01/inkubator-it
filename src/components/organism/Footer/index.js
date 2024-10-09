@@ -47,7 +47,7 @@ const Footer = () => {
             <Whatsapp />
           </div>
         </div>
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-8">
           <div>
             <h6 className="text-[24px] font-bold">Hubungi Kami</h6>
             <p className="w-[384px]">
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="text-center text-[16px] bg-[#ECAF23]">
+        <p className="text-center text-[16px] bg-[#ECAF23] py-[10px]">
           © Inkubator IT HMIF 2021. All rights reserved.
         </p>
       </div>
