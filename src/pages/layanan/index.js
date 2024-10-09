@@ -1,7 +1,14 @@
+import Layout from "@/components/templates/Layout";
 import React from "react";
 
 const LayananPage = () => {
-  return <div>LayananPage</div>;
+  return (
+    <>
+      <Layout>
+        <div>layanan</div>
+      </Layout>
+    </>
+  );
 };
 
 export default LayananPage;

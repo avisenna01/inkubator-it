@@ -57,10 +57,18 @@ const Footer = () => {
           </div>
           <div>
             <h6 className="text-[24px] font-bold">Navigasi</h6>
-            <p onClick={goToHome}>Tentang</p>
-            <p onClick={goToLayanan}>Layanan</p>
-            <p onClick={goToPortfolio}>Portfolio</p>
-            <p onClick={goToFAQ}>FAQ</p>
+            <p className="cursor-pointer" onClick={goToHome}>
+              Tentang
+            </p>
+            <p className="cursor-pointer" onClick={goToLayanan}>
+              Layanan
+            </p>
+            <p className="cursor-pointer" onClick={goToPortfolio}>
+              Portfolio
+            </p>
+            <p className="cursor-pointer" onClick={goToFAQ}>
+              FAQ
+            </p>
           </div>
         </div>
       </div>
