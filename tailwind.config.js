@@ -11,7 +11,19 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      textDecorationSkipInk: {
+        none: "none",
+        auto: "auto",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".decoration-skip-ink-none": {
+          "text-decoration-skip-ink": "none",
+        },
+      });
+    },
+  ],
 };

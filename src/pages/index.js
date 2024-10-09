@@ -1,5 +1,15 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import Layout from "@/components/templates/Layout";
+import Button from "@/components/atoms/Button";
+import { goToAjukanProyek } from "@/helpers/utils/navigation";
+import Thumbs from "@/components/atoms/Icons/Thumbs";
+import Dollar from "@/components/atoms/Icons/Dollar";
+import Shield from "@/components/atoms/Icons/Shield";
+import Website from "@/components/atoms/Icons/Website";
+import Desktop from "@/components/atoms/Icons/Desktop";
+import Lainnya from "@/components/atoms/Icons/Lainnya";
+import Mobile from "@/components/atoms/Icons/Mobile";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,102 +24,135 @@ const geistMono = localFont({
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <>
+      <Layout>
+        <section className="section-1 bg-gradient-to-r from-[#212F45] to-[#4D194D] px-[100px] pt-[108px]">
+          <div className="flex items-center text-white">
+            <div>
+              <p>Selamat datang di</p>
+              <h2 className="text-[56px]  underline decoration-solid  decoration-[20px] decoration-[#ECAF23] decoration-skip-ink-none underline-offset-[-6px]">
+                Inkubator IT
+              </h2>
+              <p>
+                Ingin idemu menjadi nyata? Butuh bantuan untuk mengerjakan tugas
+                dalam bentuk perangkat lunak? Kamu datang ke tempat yang tepat!
+              </p>
+              <Button
+                onClick={goToAjukanProyek}
+                textButton="Ajukan Proyek"
+                color="bg-[#39968A] text-white hover:bg-[#ECAF23] transition-all"
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/laptop-mobile.svg"
+                alt="laptop mobile"
+                className="hover:cursor-pointer"
+                width={800}
+                height={800}
+              />
+            </div>
+          </div>
+          <div>
+            <h1 className="text-right text-white text-[36px] underline decoration-solid  decoration-[20px] decoration-[#ECAF23] decoration-skip-ink-none underline-offset-[-6px]">
+              Kenapa Inkubator IT
+            </h1>
+            <div className="text-white">
+              <ul className="inline-flex mt-[76px] items-center gap-4">
+                <Thumbs />
+                <li>
+                  <h6 className="font-bold">Terpercaya</h6>
+                  <p>
+                    IIT sudah menjadi layanan penyedia jasa pembuatan perangkat
+                    lunak yang dipercaya oleh ratusan klien.
+                  </p>
+                </li>
+                <Dollar />
+                <li>
+                  <h6 className="font-bold">Terjangkau</h6>
+                  <p>
+                    Harga jasa yang ditawarkan IIT lebih terjangkau dibanding di
+                    tempat lain.
+                  </p>
+                </li>
+                <Shield />
+                <li>
+                  <h6 className="font-bold">Terjamin</h6>
+                  <p>
+                    IIT menjamin proyek yang kamu ajukan akan selesai sesuai
+                    dengan kesepakatan.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/images/wave.svg"
+          width="1440"
+          height="262"
+          className="absolute mt-[-100px] z-[-50] min-w-screen"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <section class="section-2 mt-[220px] px-[72px] mb-">
+          <h1 className="text-[36px] mb-[10px] font-bold underline decoration-solid  decoration-[20px] decoration-[#ECAF23] decoration-skip-ink-none underline-offset-[-6px]">
+            Layanan Kami
+          </h1>
+          <div className="grid grid-cols-2 gap-16">
+            <div className="flex gap-4 shadow-lg px-[20px] py-[80px] rounded-[12px]">
+              <Website />
+              <div>
+                <h6 className="font-bold text-[20px]">Website</h6>
+                <p>
+                  Inkubator IT menyediakan layanan pembuatan website / situs
+                  untuk kebutuhan bisnis, lomba, maupun pribadi.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]">
+              <Mobile />
+              <div>
+                <h6 className="font-bold text-[20px]">Mobile</h6>
+                <p>
+                  Inkubator IT menyediakan layanan pembuatan aplikasi berbasis
+                  mobile.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]">
+              <Desktop />
+              <div>
+                <h6 className="font-bold text-[20px]">Desktop</h6>
+                <p>
+                  Inkubator IT menyediakan layanan pembuatan aplikasi berbasis
+                  dekstop yang dapat dibuka dari perangkat PC / laptop.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]">
+              <Lainnya />
+              <div>
+                <h6 className="font-bold text-[20px]">Lainnya</h6>
+                <p>
+                  Inkubator IT juga menyediakan layanan produk digital lain
+                  seperti Game, AI/ML, AR/VR.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section-3 mt-[128px]">
+          <p className="text-[48px] font-bold">Bagaimana Cara Kerjanya?</p>
+        </section>
+        <section className="section-4 text-center">
+          <p className="text-[48px] font-bold">
+            Ingin Membuat Proyek Bersama Kami?
+          </p>
+          <Button
+            textButton="Ajukan Projek"
+            color="text-white bg-gradient-to-r from-[#212F45] to-[#4D194D]"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </section>
+      </Layout>
+    </>
   );
 }
