@@ -23,7 +23,7 @@ const Navbar = () => {
           height={80}
         />
       </div>
-      <div>
+      <div className="flex justify-center gap-2">
         <Button onClick={goToTentang} textButton="Tentang" />
         {/* Tentang */}
         {/* </Button> */}
