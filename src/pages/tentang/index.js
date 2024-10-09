@@ -1,6 +1,6 @@
 import Title from "@/components/atoms/Title";
 import Card from "@/components/moleculs/Card";
-import Section4 from "@/components/organism/ProjectWithUs";
+import ProjectWithUs from "@/components/organism/ProjectWithUs";
 import Layout from "@/components/templates/Layout";
 import React from "react";
 
@@ -70,7 +70,7 @@ const TentangPage = () => {
               dengan perkembangan teknologi.
             </Card>
           </div>
-          <Section4 />
+          <ProjectWithUs />
         </div>
       </Layout>
     </>

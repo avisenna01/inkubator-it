@@ -12,7 +12,7 @@ import Desktop from "@/components/atoms/Icons/Desktop";
 import Lainnya from "@/components/atoms/Icons/Lainnya";
 import Mobile from "@/components/atoms/Icons/Mobile";
 
-const Section4 = () => {
+const ProjectWithUs = () => {
   return (
     <>
       <section className="section-4 text-center px-[72px] mb-[100px] flex flex-col gap-4 items-center">
@@ -29,4 +29,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default ProjectWithUs;
