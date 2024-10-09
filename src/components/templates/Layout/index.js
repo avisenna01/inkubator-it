@@ -1,4 +1,4 @@
-import Navbar from "@/components/moleculs/Navbar";
+import Navbar from "@/components/moleculs/GlobalNavbar";
 import Footer from "@/components/organism/Footer";
 import React from "react";
 

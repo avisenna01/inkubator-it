@@ -13,7 +13,7 @@ import Mobile from "@/components/atoms/Icons/Mobile";
 import Section1 from "@/components/organism/Home/Section1";
 import Section2 from "@/components/organism/Home/Section2";
 import Section3 from "@/components/organism/Home/Section3";
-import Section4 from "@/components/organism/Home/Section4";
+import Section4 from "@/components/organism/ProjectWithUs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

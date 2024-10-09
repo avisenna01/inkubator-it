@@ -11,7 +11,7 @@ export const goToPortfolio = () => {
   window.location.href = "/portfolio";
 };
 export const goToFAQ = () => {
-  window.location.href = "/tentang";
+  window.location.href = "/faq";
 };
 export const goToAjukanProyek = () => {
   window.location.href = "/ajukanProyek";

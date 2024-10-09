@@ -20,7 +20,7 @@ const Section2 = () => {
           Layanan Kami
         </h1>
         <div className="grid grid-cols-2 gap-16">
-          <div className="flex gap-4 shadow-lg px-[20px] py-[80px] rounded-[12px] hover:bg-[#4D194D] hover:text-white transition-all">
+          <div className="flex gap-4 shadow-lg px-[20px] py-[80px] rounded-[12px] hover:bg-[#4D194D] hover:text-white transition-all hover:scale-105">
             <Website />
             <div>
               <h6 className="font-bold text-[20px]">Website</h6>
@@ -30,7 +30,7 @@ const Section2 = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]  hover:bg-[#4D194D] hover:text-white transition-all">
+          <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]  hover:bg-[#4D194D] hover:text-white transition-all hover:scale-105">
             <Mobile />
             <div>
               <h6 className="font-bold text-[20px]">Mobile</h6>
@@ -40,7 +40,7 @@ const Section2 = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]  hover:bg-[#4D194D] hover:text-white transition-all">
+          <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]  hover:bg-[#4D194D] hover:text-white transition-all hover:scale-105">
             <Desktop />
             <div>
               <h6 className="font-bold text-[20px]">Desktop</h6>
@@ -50,7 +50,7 @@ const Section2 = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]  hover:bg-[#4D194D] hover:text-white transition-all">
+          <div className="flex gap-4  shadow-lg px-[20px] py-[80px]  rounded-[12px]  hover:bg-[#4D194D] hover:text-white transition-all hover:scale-105">
             <Lainnya />
             <div>
               <h6 className="font-bold text-[20px]">Lainnya</h6>
