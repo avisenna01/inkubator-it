@@ -26,8 +26,8 @@ const TentangPage = () => {
             <p className="font-semibold text-[24px]">Visi</p>
             <ul>
               <li>
-                Terbentuknya komunitas IT sebagai wadah aktualisasi keprofesian
-                massa HMIF.
+                - Terbentuknya komunitas IT sebagai wadah aktualisasi
+                keprofesian massa HMIF.
               </li>
             </ul>
           </div>
@@ -35,20 +35,20 @@ const TentangPage = () => {
             <p className="font-semibold text-[24px]">Misi</p>
             <ul>
               <li>
-                Membentuk dan mengembangkan komunitas berbasis keilmuan
+                - Membentuk dan mengembangkan komunitas berbasis keilmuan
                 informatika.
               </li>
               <li>
-                Menyalurkan dan mengembangkan potensi anggota Inkubator IT
+                - Menyalurkan dan mengembangkan potensi anggota Inkubator IT
                 melalui pembelajaran dan aktualisasi diri.
               </li>
               <li>
-                Memotivasi minat anggota untuk berinovasi sebagai
+                - Memotivasi minat anggota untuk berinovasi sebagai
                 bentukpengembangan keilmuan informatika.
               </li>
               <li>
-                Mendukung keberjalanan HMIF dengan mendapatkan sumber dana dari
-                pengerjaan proyek.xz
+                - Mendukung keberjalanan HMIF dengan mendapatkan sumber dana
+                dari pengerjaan proyek.xz
               </li>
             </ul>
           </div>

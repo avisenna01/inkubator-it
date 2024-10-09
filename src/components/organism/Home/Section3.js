@@ -20,7 +20,7 @@ const Section3 = () => {
         <p className="text-[48px] font-bold mb-[60px]">
           Bagaimana Cara Kerjanya?
         </p>
-        <div className="flex justify-between">
+        <div className="flex justify-around">
           <div className="flex flex-col gap-8">
             <div>
               <p className="font-bold">Step 1</p>
@@ -47,7 +47,7 @@ const Section3 = () => {
               <p className="text-[14px]">Pengerjaan Proyek</p>
             </div>
           </div>
-          {/* <Carousel /> */}
+          <Carousel />
         </div>
       </section>
     </>

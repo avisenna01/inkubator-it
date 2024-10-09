@@ -4,7 +4,7 @@ import Button from "@/components/atoms/Button";
 const MiniNavbar = () => {
   const [contentValue, setContentValue] = useState("website");
   return (
-    <div className="flex items-center gap-2 justify-start px-[40px] py-[20px]">
+    <div className="flex items-center gap-2 justify-start py-[20px]">
       <Button
         onClick={() => {
           setContentValue("website");
